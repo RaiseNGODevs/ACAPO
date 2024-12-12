@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Orgao_Nao_Corresponde_A_Delegacao</fullName>
+    <active>true</active>
+    <errorConditionFormula>(CONTAINS(TEXT(ORG_O__c), &apos;DELEGAÇÃO&apos;)||CONTAINS(TEXT(ORG_O__c), &apos;DELEGAÇAO&apos;)) &amp;&amp; NOT(CONTAINS(TEXT(ORG_O__c), Delega_o__c))</errorConditionFormula>
+    <errorMessage>Órgão Associativo não corresponde à Delegação do contacto</errorMessage>
+</ValidationRule>

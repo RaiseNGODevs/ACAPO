@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tipo__c</fullName>
+    <externalId>false</externalId>
+    <label>tipo</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>efetivo</fullName>
+                <default>false</default>
+                <label>efetivo</label>
+            </value>
+            <value>
+                <fullName>suplente</fullName>
+                <default>false</default>
+                <label>suplente</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,91 @@
+<apex:page controller="NewsletterSubscriptionFormController" showHeader="false" showChat="false" showQuickActionVfHeader="false" sidebar="false" applyBodyTag="false" applyHtmlTag="false" standardStylesheets="false"
+           language="{!$CurrentPage.parameters.lang}">
+    <html>
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <link type="text/css" rel="stylesheet" href="http://www.acapo.pt/sites/default/files/css/css_JPobExmHoM2UPKYc0PlYX1vt50leELzRYvBNRdS4pns.css" media="all" />
+            <link type="text/css" rel="stylesheet" href="http://www.acapo.pt/sites/default/files/css/css_3no7VQQOSZILNtmsmdzD2qp_gdQm-AQLBZkFpJ56nZs.css" media="all" />
+            <c:NewsletterCSS />
+            <style>
+                .error{
+                    position: relative;
+                    color: red;
+                }
+            </style>
+        </head>
+        <body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-262 node-type-webform">
+            <header class="site-header clearfix">
+                <h1 class="logo">
+                    <a href="/"><img src="http://www.acapo.pt/sites/default/themes/acapo/img/logo-acapo.svg" alt="Logótipo da Associação dos Cegos e Amblíopes de Portugal" /></a>
+                </h1>
+            </header>
+            <main id="content" class="site-content webform-content clearfix">
+                <div id="block-system-main" class="block block-system">
+					<div class="content">
+                        <div class="content-wrapper wrap">
+                            <h1 class="title page-title show-for-sr">
+                                Subscrição de newsletter  
+                            </h1>
+                            <apex:outputPanel rendered="{!step == 1}">
+                                <apex:form styleclass="webform-client-form">
+                                    <fieldset class="webform-component-fieldset webform-component--candidato form-wrapper">
+                                        <legend>Indique os seus dados</legend>                        
+                                        <div class="form-item webform-component webform-component-textfield">
+                                            <apex:outputLabel for="firstName">Primeiro nome  <span class="form-required" title="Este campo é obrigatório.">*</span></apex:outputLabel>
+                                            <apex:inputText id="firstName" value="{!firstName}" styleClass="{!IF(LEN(errorMap['firstName']) > 0, 'form-text required' , 'form-text required')}" maxLength="40" onChange="handleChange(this)"/>
+                                            <apex:outputPanel rendered="{!LEN(errorMap['firstName']) > 0}">
+                                                <div class="error">
+                                                    {!errorMap['firstName']}                            
+                                                </div>
+                                            </apex:outputPanel>
+                                        </div>
+                                        <div class="form-item webform-component webform-component-textfield">
+                                            <apex:outputLabel for="lastName">Último nome  <span class="form-required" title="Este campo é obrigatório.">*</span></apex:outputLabel>
+                                            <apex:inputText id="lastName" value="{!lastName}" styleClass="{!IF(LEN(errorMap['lastName']) > 0, 'form-text required' , 'form-text required')}" maxLength="80" onChange="handleChange(this)"/>
+                                            <apex:outputPanel rendered="{!LEN(errorMap['lastName']) > 0}">
+                                                <div class="error">
+                                                    {!errorMap['lastName']}                           
+                                                </div>
+                                            </apex:outputPanel>
+                                        </div>
+                                        <div class="form-item webform-component webform-component-textfield">
+                                            <apex:outputLabel for="email">Email  <span class="form-required" title="Este campo é obrigatório.">*</span></apex:outputLabel>
+                                            <apex:inputText id="email" value="{!email}" styleClass="{!IF(LEN(errorMap['email']) > 0, 'form-text required' , 'form-text required')}" maxlength="80" onChange="handleChange(this)"/>
+                                            <apex:outputPanel rendered="{!LEN(errorMap['email']) > 0}">
+                                                <div class="error">
+                                                    {!errorMap['email']}                           
+                                                </div>
+                                            </apex:outputPanel>
+                                        </div>
+                                    </fieldset>
+                                    <div class="form-actions">
+                                        <apex:commandButton action="{!submit}" value="Enviar" styleclass="webform-submit button-primary form-submit" onClick="submitClick()"/>
+                                    </div>
+                                </apex:form>
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!step == 2}">
+                                <p>
+                                    {!$Label.Newsletter_subscription_confirmation_text} 
+                                </p>
+                            </apex:outputPanel>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <script>
+            	function handleChange(e){
+                	if(e.value){
+                        e.parentNode.classList.add("has-content");
+                    }else{
+                        e.parentNode.classList.remove("has-content");
+                    }
+                }
+            	function submitClick(){
+                	const loadingDiv = document.getElementsByClassName("wwf-loading-container")[0];
+                    loadingDiv.style.display = "block";
+                }
+            </script>
+        </body>
+    </html>
+</apex:page>

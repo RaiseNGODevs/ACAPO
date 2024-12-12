@@ -1,0 +1,82 @@
+<apex:page standardController="Campaign" extensions="EtiquetasPDFController" 
+           showHeader="false" 
+           sidebar="false" 
+           docType="html-5.0"
+           renderAs="{!IF(showPDF, 'pdf', '')}"
+           lightningStylesheets="{!IF(showPDF, false, true)}"
+           applyBodyTag="false"
+           applyHtmlTag="false">
+    <html>
+        <head>
+            <style>
+                @page{
+               		margin: {!marginTop}cm {!marginRight}cm {!marginBottom}cm {!marginLeft}cm;
+                }
+                .etiqueta{
+                	display: inline-block; 
+                	text-transform:uppercase; 
+                	width: {!etiquetaWidth}cm; 
+                	height: {!etiquetaHeight}cm; 
+                	font-size:13px; 
+                	font-family: Helvetica, sans-serif;
+                }
+                .slds-form{
+                	margin: 20px;
+                }
+                .slds-form-element{
+                	margin: 10px 0 !important;
+                }
+                .slds-input{
+                	width: 80px !important;
+                }
+                .btn{
+                	margin-top: 20px !important;
+                }
+            </style>
+        </head>
+        <body>
+            <apex:outputPanel layout="none" rendered="{!!showPDF}">
+                <apex:slds />
+                <apex:form styleClass="slds-scope slds-form">
+                    <div class="slds-text-heading_medium">Imprimir Etiquetas</div>
+                    
+                    <div class="slds-form-element slds-form-element_stacked">
+                        <apex:outputLabel styleClass="slds-form-element__label">
+                            Margens (cm)
+                        </apex:outputLabel>
+                        <div class="slds-form-element__control">
+                            Topo <apex:inputText styleClass="slds-input" value="{!marginTop}"/>
+                            Direita <apex:inputText styleClass="slds-input" value="{!marginRight}"/>
+                            Baixo <apex:inputText styleClass="slds-input" value="{!marginBottom}"/>
+                            Esquerda <apex:inputText styleClass="slds-input" value="{!marginLeft}"/>
+                        </div>
+                    </div>
+                    
+                    <div class="slds-form-element slds-form-element_stacked">
+                        <apex:outputLabel styleClass="slds-form-element__label">
+                            Etiquetas (cm)
+                        </apex:outputLabel>
+                        <div class="slds-form-element__control">
+                            Largura <apex:inputText styleClass="slds-input" value="{!etiquetaWidth}"/>
+                            Tamanho <apex:inputText styleClass="slds-input" value="{!etiquetaHeight}"/>
+                        </div>
+                    </div>
+                    
+                    <apex:commandButton styleClass="slds-button slds-button_brand" value="Gerar PDF" action="{!generatePDF}"/>
+                </apex:form>
+            </apex:outputPanel>
+            <apex:outputPanel layout="none" rendered="{!showPDF}">
+                <apex:variable value="{!0}" var="listIndex"/>
+                <apex:repeat var="contact" value="{!contactList}">
+                    <apex:variable var="listIndex" value="{!listIndex+1}"/>
+                    
+                    <div class="etiqueta">
+                        {!contact.Name}
+                        <br/>{!contact.MailingStreet}
+                        <br/>{!contact.MailingPostalCode} <apex:outputPanel rendered="{!contact.MailingCity != null}" layout="none"> {!contact.MailingCity}</apex:outputPanel><apex:outputPanel rendered="{!contact.MailingCity == null}" layout="none"> {!contact.Localidade__c}</apex:outputPanel>
+                    </div>
+                </apex:repeat>
+            </apex:outputPanel>
+        </body>
+    </html>
+</apex:page>

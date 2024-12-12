@@ -1,0 +1,25 @@
+<apex:page standardController="Contact" extensions="PreviewController">
+    <style>
+    
+        .interviewDiv{
+                    
+            border: groove;
+            border-radius: 5px;
+            border-color: #7325c2;
+            padding-left: 5px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+    </style>
+    
+    <apex:pageBlock >
+        <apex:form >
+            <div style="float: left; margin-right: 10px; border: solid; border-color: #7325c2;">
+                <apex:image url="{!IF(url != '', url,URLFOR($Resource.photo_url))}" width="150px" height="150px"/>
+            </div>
+           
+                
+        
+        </apex:form>
+    </apex:pageBlock>
+</apex:page>

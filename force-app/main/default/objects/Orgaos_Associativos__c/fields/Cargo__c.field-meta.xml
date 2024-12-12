@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cargo__c</fullName>
+    <externalId>false</externalId>
+    <label>Cargo</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>ORG_O__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Assembleia de Representantes</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Assembleia de Representantes</label>
+            </value>
+            <value>
+                <fullName>Comissão de Disciplina</fullName>
+                <default>false</default>
+                <label>Comissão de Disciplina</label>
+            </value>
+            <value>
+                <fullName>Direção de Delegação</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Direção de Delegação</label>
+            </value>
+            <value>
+                <fullName>Mesa da Assembleia de Delegação</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mesa da Assembleia de Delegação</label>
+            </value>
+            <value>
+                <fullName>Presidente</fullName>
+                <default>false</default>
+                <label>Presidente</label>
+            </value>
+            <value>
+                <fullName>Presidente da Mesa</fullName>
+                <default>false</default>
+                <label>Presidente da Mesa</label>
+            </value>
+            <value>
+                <fullName>Primeiro Secretário</fullName>
+                <default>false</default>
+                <label>Primeiro Secretário</label>
+            </value>
+            <value>
+                <fullName>Primeiro Secretário da Mesa</fullName>
+                <default>false</default>
+                <label>Primeiro Secretário da Mesa</label>
+            </value>
+            <value>
+                <fullName>Relator</fullName>
+                <default>false</default>
+                <label>Relator</label>
+            </value>
+            <value>
+                <fullName>Representante</fullName>
+                <default>false</default>
+                <label>Representante</label>
+            </value>
+            <value>
+                <fullName>Secretário</fullName>
+                <default>false</default>
+                <label>Secretário</label>
+            </value>
+            <value>
+                <fullName>Segundo Secretário</fullName>
+                <default>false</default>
+                <label>Segundo Secretário</label>
+            </value>
+            <value>
+                <fullName>Segundo Secretário da Mesa</fullName>
+                <default>false</default>
+                <label>Segundo Secretário da Mesa</label>
+            </value>
+            <value>
+                <fullName>Tesoureiro</fullName>
+                <default>false</default>
+                <label>Tesoureiro</label>
+            </value>
+            <value>
+                <fullName>Vice-Presidente</fullName>
+                <default>false</default>
+                <label>Vice-Presidente</label>
+            </value>
+            <value>
+                <fullName>Vogal</fullName>
+                <default>false</default>
+                <label>Vogal</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO AVEIRO</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO BRAGA</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO CASTELO BRANCO</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO COIMBRA</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO GUARDA</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO LEIRIA</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO LISBOA</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO PORTO</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO VIANA DO CASTELO</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO VILA REAL</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO CASTELO BRANCO</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO VISEU</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO COIMBRA</controllingFieldValue>
+            <controllingFieldValue>ASSEMBLEIA  DE REPRESENTANTES</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO GUARDA</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO LEIRIA</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO LISBOA</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO PORTO</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO VIANA DO CASTELO</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO VILA REAL</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO VISEU</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO NACIONAL</controllingFieldValue>
+            <controllingFieldValue>CONSELHO FISCAL E DE JURISDIÇÃO</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO AÇORES</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO ALGARVE</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO AVEIRO</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO BRAGA</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO AÇORES</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO ALGARVE</controllingFieldValue>
+            <valueName>Presidente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO AVEIRO</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO BRAGA</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO CASTELO BRANCO</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO COIMBRA</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO GUARDA</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO LEIRIA</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO LISBOA</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO PORTO</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO VIANA DO CASTELO</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO VILA REAL</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO VISEU</controllingFieldValue>
+            <controllingFieldValue>ASSEMBLEIA  DE REPRESENTANTES</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO AÇORES</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO ALGARVE</controllingFieldValue>
+            <valueName>Primeiro Secretário</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO AVEIRO</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO BRAGA</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO CASTELO BRANCO</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO COIMBRA</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO GUARDA</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO LEIRIA</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO LISBOA</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO PORTO</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO VIANA DO CASTELO</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO VILA REAL</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO VISEU</controllingFieldValue>
+            <controllingFieldValue>ASSEMBLEIA  DE REPRESENTANTES</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO AÇORES</controllingFieldValue>
+            <controllingFieldValue>MESA ASSEMBLEIA GERAL DELEGAÇAO ALGARVE</controllingFieldValue>
+            <valueName>Segundo Secretário</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO CASTELO BRANCO</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO COIMBRA</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO GUARDA</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO LEIRIA</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO LISBOA</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO PORTO</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO VIANA DO CASTELO</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO VILA REAL</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO VISEU</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO NACIONAL</controllingFieldValue>
+            <controllingFieldValue>CONSELHO FISCAL E DE JURISDIÇÃO</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO AÇORES</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO ALGARVE</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO AVEIRO</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO BRAGA</controllingFieldValue>
+            <valueName>Secretário</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO CASTELO BRANCO</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO COIMBRA</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO GUARDA</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO LEIRIA</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO LISBOA</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO PORTO</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO VIANA DO CASTELO</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO VILA REAL</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO VISEU</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO NACIONAL</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO AÇORES</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO ALGARVE</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO AVEIRO</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO BRAGA</controllingFieldValue>
+            <valueName>Tesoureiro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO CASTELO BRANCO</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO COIMBRA</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO GUARDA</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO LEIRIA</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO LISBOA</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO PORTO</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO VIANA DO CASTELO</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO VILA REAL</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO VISEU</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO NACIONAL</controllingFieldValue>
+            <controllingFieldValue>CONSELHO FISCAL E DE JURISDIÇÃO</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO AÇORES</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO ALGARVE</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO AVEIRO</controllingFieldValue>
+            <controllingFieldValue>DIRECÇÃO DE DELEGAÇÃO BRAGA</controllingFieldValue>
+            <valueName>Vice-Presidente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIRECÇÃO NACIONAL</controllingFieldValue>
+            <valueName>Vogal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CONSELHO FISCAL E DE JURISDIÇÃO</controllingFieldValue>
+            <valueName>Relator</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

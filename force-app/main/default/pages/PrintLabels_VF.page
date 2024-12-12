@@ -1,0 +1,1 @@
+<apex:page StandardController="Contact" recordSetVar="records" extensions="PrintLabels_CTRL" action="{!urlRedirection}"/>

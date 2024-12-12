@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <apiVersion>49.0</apiVersion>
+    <dynamicChoiceSets>
+        <name>Divulgacao</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Divulgacao_de_dados__c</picklistField>
+        <picklistObject>Questionario__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>Pick_ano_compra</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Ano_de_compra__c</picklistField>
+        <picklistObject>Questionario__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>Pick_comprou_produtos</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Ja_comprou_na_nossa_empresa__c</picklistField>
+        <picklistObject>Questionario__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>Pick_Deficiencia_visual</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Deficiencia_visual__c</picklistField>
+        <picklistObject>Questionario__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>Pick_Preferencia</name>
+        <dataType>Multipicklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Preferencia_de_futuros_contactos__c</picklistField>
+        <picklistObject>Questionario__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>PickAcessibilidade</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>A__c</picklistField>
+        <picklistObject>Questionario__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>PickAtendimentoeletrnico</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Qualidade_do_atendimento_eletronico__c</picklistField>
+        <picklistObject>Questionario__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>PickAtendimentoPresencial</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Qualidade_do_atendimento_presencial__c</picklistField>
+        <picklistObject>Questionario__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>PickAtendimentoTelefonico</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Qualidade_atendimento_telefonico__c</picklistField>
+        <picklistObject>Questionario__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>PickQualidadePreco</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Relacao_qualidade_preco__c</picklistField>
+        <picklistObject>Questionario__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>PickQualidadeProdutos</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Qualidade_dos_produtos__c</picklistField>
+        <picklistObject>Questionario__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>PickRecomendacao</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Recomendacao_da_empresa__c</picklistField>
+        <picklistObject>Questionario__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>PickSatisfacao</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>A__c</picklistField>
+        <picklistObject>Questionario__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>PickServicoPosVenda</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Servico_de_pos_venda__c</picklistField>
+        <picklistObject>Questionario__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>PickTempoEntrega</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Tempo_de_entrega__c</picklistField>
+        <picklistObject>Questionario__c</picklistObject>
+    </dynamicChoiceSets>
+    <interviewLabel>Questionário {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Questionário</label>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>Criacao_de_Questionario</name>
+        <label>Criação de Questionário</label>
+        <locationX>331</locationX>
+        <locationY>303</locationY>
+        <inputAssignments>
+            <field>Contacto__c</field>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Divulgacao_de_dados__c</field>
+            <value>
+                <elementReference>Autorizacao_dados</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Ja_comprou_na_nossa_empresa__c</field>
+            <value>
+                <elementReference>Ja_adquiriu_algum_produto</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Preferencia_de_futuros_contactos__c</field>
+            <value>
+                <elementReference>preferencia_contactado</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Produtos_adquiridos__c</field>
+            <value>
+                <elementReference>Produtos_adquiridos</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Qualidade_atendimento_telefonico__c</field>
+            <value>
+                <elementReference>Qualidade_do_atendimento_eletronico</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Qualidade_do_atendimento_eletronico__c</field>
+            <value>
+                <elementReference>Qualidade_do_atendimento_eletronico</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Qualidade_do_atendimento_presencial__c</field>
+            <value>
+                <elementReference>Qualidade_do_atendimento_presencial</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Qualidade_dos_produtos__c</field>
+            <value>
+                <elementReference>Qualidade_dos_produtos</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Recomendacao_da_empresa__c</field>
+            <value>
+                <elementReference>Recomendaria</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Relacao_qualidade_preco__c</field>
+            <value>
+                <elementReference>Relacao_Qualidade_Preco</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Servico_de_pos_venda__c</field>
+            <value>
+                <elementReference>Servico_de_pos_venda</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Sugestoes_de_melhoria__c</field>
+            <value>
+                <elementReference>Sugestao</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Tempo_de_entrega__c</field>
+            <value>
+                <elementReference>Tempo_de_entrega</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Questionario__c</object>
+    </recordCreates>
+    <recordLookups>
+        <name>Pesquisa_Contacto</name>
+        <label>Pesquisa Contacto</label>
+        <locationX>279</locationX>
+        <locationY>41</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Apresentacao_e_dados</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <object>Contact</object>
+        <outputAssignments>
+            <assignToReference>Endereco</assignToReference>
+            <field>MailingAddress</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>Cidade</assignToReference>
+            <field>MailingCity</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>Pais</assignToReference>
+            <field>MailingCountry</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>CodPostal</assignToReference>
+            <field>MailingPostalCode</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>Concelho</assignToReference>
+            <field>MailingState</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>Rua</assignToReference>
+            <field>MailingStreet</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>Nome</assignToReference>
+            <field>Name</field>
+        </outputAssignments>
+    </recordLookups>
+    <screens>
+        <name>Apresentacao_e_dados</name>
+        <label>Apresentação e dados</label>
+        <locationX>276</locationX>
+        <locationY>174</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Criacao_de_Questionario</targetReference>
+        </connector>
+        <fields>
+            <name>Apresentacao</name>
+            <fieldText>Bom dia, o meu nome é ( Nome Utilizador / ), estou a contatar da UEST  e gostaria de contar com a sua colaboração para um breve questionário. 
+O tempo dispendido será no máximo de 5 minutos. Podemos contar consigo?</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Cliente</name>
+            <fieldText>Permita-me uma breve confirmação dos seus dados:
+Nome do Cliente : {!Nome}
+Endereço :
+{!Rua}
+{!CodPostal}   {!Cidade}
+{!Pais}</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>P</name>
+            <fieldText>Deficiência visual</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Deficiencia_visual</name>
+            <choiceReferences>Pick_Deficiencia_visual</choiceReferences>
+            <dataType>String</dataType>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>Aquisicao_produtos</name>
+            <fieldText>Já adquiriu algum produto na nossa empresa ?</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Ja_adquiriu_algum_produto</name>
+            <choiceReferences>Pick_comprou_produtos</choiceReferences>
+            <dataType>String</dataType>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>Produtos_adquiridos</name>
+            <dataType>String</dataType>
+            <fieldText>Produtos adquiridos</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>P1</name>
+            <fieldText>Qual o ano de compra</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Ano_compra</name>
+            <choiceReferences>Pick_ano_compra</choiceReferences>
+            <dataType>String</dataType>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>P2</name>
+            <fieldText>Gostaríamos de saber o seu grau de satisfação com a nossa empresa.
+Numa escala de 1 a 4, sendo que:
+1 - Muito insatisfeito
+2 - Insatisfeito
+3 - Satisfeito
+4 - Muito satisfeito</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>P3</name>
+            <fieldText>Qualidade do atendimento presencial</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Qualidade_do_atendimento_presencial</name>
+            <choiceReferences>PickAtendimentoPresencial</choiceReferences>
+            <dataType>String</dataType>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>P4</name>
+            <fieldText>Qualidade do atendimento telefónico</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Qualidade_do_atendimento_telefonico</name>
+            <choiceReferences>PickAtendimentoTelefonico</choiceReferences>
+            <dataType>String</dataType>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>P5</name>
+            <fieldText>Qualidade do atendimento eletrónico</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Qualidade_do_atendimento_eletronico</name>
+            <choiceReferences>PickAtendimentoeletrnico</choiceReferences>
+            <dataType>String</dataType>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>P6</name>
+            <fieldText>Qualidade dos produtos</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Qualidade_dos_produtos</name>
+            <choiceReferences>PickQualidadeProdutos</choiceReferences>
+            <dataType>String</dataType>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>P7</name>
+            <fieldText>Tempo de entrega</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Tempo_de_entrega</name>
+            <choiceReferences>PickTempoEntrega</choiceReferences>
+            <dataType>String</dataType>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>P8</name>
+            <fieldText>Relação entre Qualidade e Preço</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Relacao_Qualidade_Preco</name>
+            <choiceReferences>PickQualidadePreco</choiceReferences>
+            <dataType>String</dataType>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>P9</name>
+            <fieldText>Serviço de pós-venda</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Servico_de_pos_venda</name>
+            <choiceReferences>PickServicoPosVenda</choiceReferences>
+            <dataType>String</dataType>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>P10</name>
+            <fieldText>Recomendaria  a nossa empresa a familiares e amigos</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Recomendaria</name>
+            <choiceReferences>PickRecomendacao</choiceReferences>
+            <dataType>String</dataType>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>P11</name>
+            <fieldText>Em situações futuras, como prefere ser contactado ?</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>preferencia_contactado</name>
+            <choiceReferences>Pick_Preferencia</choiceReferences>
+            <dataType>String</dataType>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>P12</name>
+            <fieldText>Ao abrigo da nova legislação sobre proteção de dados pessoais, gostaríamos de saber se podemos utilizar os seus dados para divulgação dos nossos produtos e serviços.</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>P13</name>
+            <fieldText>Autorização de divulgação de dados</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Autorizacao_dados</name>
+            <choiceReferences>Pick_comprou_produtos</choiceReferences>
+            <dataType>String</dataType>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>P14</name>
+            <fieldText>A sua opinião é importante.
+Quer deixar-nos alguma sugestão para melhorarmos a qualidade dos nossos serviços? Qual?</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Sugestao</name>
+            <dataType>String</dataType>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>P15</name>
+            <fieldText>Para terminar resta-me agradecer em nome da UEST o tempo que nos dispensou.
+Continuação de um bom dia para si.</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <startElementReference>Pesquisa_Contacto</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>Cidade</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>CodPostal</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Concelho</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>CreatedUser</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Endereco</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>Nome</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>Pais</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Rua</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

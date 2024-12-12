@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ORG_O__c</fullName>
+    <externalId>false</externalId>
+    <label>Orgão</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>ASSEMBLEIA  DE REPRESENTANTES</fullName>
+                <default>false</default>
+                <label>ASSEMBLEIA DE  REPRESENTANTES</label>
+            </value>
+            <value>
+                <fullName>CONSELHO FISCAL E DE JURISDIÇÃO</fullName>
+                <default>false</default>
+                <label>CONSELHO FISCAL E DE JURISDIÇÃO</label>
+            </value>
+            <value>
+                <fullName>DIRECÇÃO DE DELEGAÇÃO AÇORES</fullName>
+                <default>false</default>
+                <label>DIREÇÃO DE DELEGAÇÃO AÇORES</label>
+            </value>
+            <value>
+                <fullName>DIRECÇÃO DE DELEGAÇÃO ALGARVE</fullName>
+                <default>false</default>
+                <label>DIREÇÃO DE DELEGAÇÃO ALGARVE</label>
+            </value>
+            <value>
+                <fullName>DIRECÇÃO DE DELEGAÇÃO AVEIRO</fullName>
+                <default>false</default>
+                <label>DIREÇÃO DE DELEGAÇÃO AVEIRO</label>
+            </value>
+            <value>
+                <fullName>DIRECÇÃO DE DELEGAÇÃO BRAGA</fullName>
+                <default>false</default>
+                <label>DIREÇÃO DE DELEGAÇÃO BRAGA</label>
+            </value>
+            <value>
+                <fullName>DIRECÇÃO DE DELEGAÇÃO CASTELO BRANCO</fullName>
+                <default>false</default>
+                <label>DIREÇÃO DE DELEGAÇÃO CASTELO BRANCO</label>
+            </value>
+            <value>
+                <fullName>DIRECÇÃO DE DELEGAÇÃO COIMBRA</fullName>
+                <default>false</default>
+                <label>DIREÇÃO DE DELEGAÇÃO COIMBRA</label>
+            </value>
+            <value>
+                <fullName>DIRECÇÃO DE DELEGAÇÃO GUARDA</fullName>
+                <default>false</default>
+                <label>DIREÇÃO DE DELEGAÇÃO GUARDA</label>
+            </value>
+            <value>
+                <fullName>DIRECÇÃO DE DELEGAÇÃO LEIRIA</fullName>
+                <default>false</default>
+                <label>DIREÇÃO DE DELEGAÇÃO LEIRIA</label>
+            </value>
+            <value>
+                <fullName>DIRECÇÃO DE DELEGAÇÃO LISBOA</fullName>
+                <default>false</default>
+                <label>DIREÇÃO DE DELEGAÇÃO LISBOA</label>
+            </value>
+            <value>
+                <fullName>DIRECÇÃO DE DELEGAÇÃO PORTO</fullName>
+                <default>false</default>
+                <label>DIREÇÃO DE DELEGAÇÃO PORTO</label>
+            </value>
+            <value>
+                <fullName>DIRECÇÃO DE DELEGAÇÃO VIANA DO CASTELO</fullName>
+                <default>false</default>
+                <label>DIREÇÃO DE DELEGAÇÃO VIANA DO CASTELO</label>
+            </value>
+            <value>
+                <fullName>DIRECÇÃO DE DELEGAÇÃO VILA REAL</fullName>
+                <default>false</default>
+                <label>DIREÇÃO DE DELEGAÇÃO VILA REAL</label>
+            </value>
+            <value>
+                <fullName>DIRECÇÃO DE DELEGAÇÃO VISEU</fullName>
+                <default>false</default>
+                <label>DIREÇÃO DE DELEGAÇÃO VISEU</label>
+            </value>
+            <value>
+                <fullName>DIRECÇÃO NACIONAL</fullName>
+                <default>false</default>
+                <label>DIREÇÃO NACIONAL</label>
+            </value>
+            <value>
+                <fullName>MESA ASSEMBLEIA GERAL DELEGAÇAO AÇORES</fullName>
+                <default>false</default>
+                <label>MESA ASSEMBLEIA GERAL DELEGAÇAO AÇORES</label>
+            </value>
+            <value>
+                <fullName>MESA ASSEMBLEIA GERAL DELEGAÇAO ALGARVE</fullName>
+                <default>false</default>
+                <label>MESA ASSEMBLEIA GERAL DELEGAÇAO ALGARVE</label>
+            </value>
+            <value>
+                <fullName>MESA ASSEMBLEIA GERAL DELEGAÇAO AVEIRO</fullName>
+                <default>false</default>
+                <label>MESA ASSEMBLEIA GERAL DELEGAÇAO AVEIRO</label>
+            </value>
+            <value>
+                <fullName>MESA ASSEMBLEIA GERAL DELEGAÇAO BRAGA</fullName>
+                <default>false</default>
+                <label>MESA ASSEMBLEIA GERAL DELEGAÇAO BRAGA</label>
+            </value>
+            <value>
+                <fullName>MESA ASSEMBLEIA GERAL DELEGAÇAO CASTELO BRANCO</fullName>
+                <default>false</default>
+                <label>MESA ASSEMBLEIA GERAL DELEGAÇAO CASTELO BRANCO</label>
+            </value>
+            <value>
+                <fullName>MESA ASSEMBLEIA GERAL DELEGAÇAO COIMBRA</fullName>
+                <default>false</default>
+                <label>MESA ASSEMBLEIA GERAL DELEGAÇAO COIMBRA</label>
+            </value>
+            <value>
+                <fullName>MESA ASSEMBLEIA GERAL DELEGAÇAO GUARDA</fullName>
+                <default>false</default>
+                <label>MESA ASSEMBLEIA GERAL DELEGAÇAO GUARDA</label>
+            </value>
+            <value>
+                <fullName>MESA ASSEMBLEIA GERAL DELEGAÇAO LEIRIA</fullName>
+                <default>false</default>
+                <label>MESA ASSEMBLEIA GERAL DELEGAÇAO LEIRIA</label>
+            </value>
+            <value>
+                <fullName>MESA ASSEMBLEIA GERAL DELEGAÇAO LISBOA</fullName>
+                <default>false</default>
+                <label>MESA ASSEMBLEIA GERAL DELEGAÇAO LISBOA</label>
+            </value>
+            <value>
+                <fullName>MESA ASSEMBLEIA GERAL DELEGAÇAO PORTO</fullName>
+                <default>false</default>
+                <label>MESA ASSEMBLEIA GERAL DELEGAÇAO PORTO</label>
+            </value>
+            <value>
+                <fullName>MESA ASSEMBLEIA GERAL DELEGAÇAO VIANA DO CASTELO</fullName>
+                <default>false</default>
+                <label>MESA ASSEMBLEIA GERAL DELEGAÇAO VIANA DO CASTELO</label>
+            </value>
+            <value>
+                <fullName>MESA ASSEMBLEIA GERAL DELEGAÇAO VILA REAL</fullName>
+                <default>false</default>
+                <label>MESA ASSEMBLEIA GERAL DELEGAÇAO VILA REAL</label>
+            </value>
+            <value>
+                <fullName>MESA ASSEMBLEIA GERAL DELEGAÇAO VISEU</fullName>
+                <default>false</default>
+                <label>MESA ASSEMBLEIA GERAL DELEGAÇAO VISEU</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

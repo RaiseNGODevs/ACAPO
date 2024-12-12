@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>ACAPO</label>
+    <logo>SalesTools/logotipo_acapo.jpg</logo>
+    <tabs>standard-Contact</tabs>
+    <tabs>npe03__Recurring_Donation__c</tabs>
+    <tabs>standard-Opportunity</tabs>
+    <tabs>standard-Campaign</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>N_S_cio_Seria_o__c</tabs>
+    <tabs>rngo_sepa__SEPA_Creditor_Account__c</tabs>
+    <tabs>MC4SF__MC_List__c</tabs>
+    <tabs>MC4SF__MC_Query__c</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>npsp__Trigger_Handler__c</tabs>
+</CustomApplication>
